@@ -1,0 +1,74 @@
+[
+    {
+        "title":"boAt Lunar Connect Pro Smartwatch",
+        "img":"./boat-lunar-connect-pro-front.jpg",
+        "rating": 4,
+        "price":"4,299"
+    },
+    {
+        "title":"Apple iPhone 14 Pro Max",
+        "img":"./d54602e1-dbd1-4e90-8bf9-90d93276b12622090633.jpg",
+        "rating": 5,
+        "price":"1,27,999"
+    },
+    {
+        "title":"Electric Kettle",
+        "img":"./51x6FRWGbrL._SL1000_.jpg",
+        "rating": 5,
+        "price":"799"
+    },
+    {
+        "title":"Play Station 5",
+        "img":"./01-min_3bf591e3-9222-4759-b123-8ab81c235f6e.webp",
+        "rating": 4,
+        "price":"54,999"
+    },
+    {
+        "title":"Samsung Galaxy M14",
+        "img":"./m14.webp",
+        "rating": 5,
+        "price":"14,990"
+    },
+    {
+        "title":"One Plus Nord CE 3 Lite 5G",
+        "img":"./product-black.png",
+        "rating": 4,
+        "price":"19,999"
+    },
+    {
+        "title":"Xiaomi Redmi Note 12 Pro 5G",
+        "img":"./note12.jpg",
+        "rating": 5,
+        "price":"24,949"
+    },
+    {
+        "title":"Samsung Galaxy S20 FE 5G",
+        "img":"./S205g.jpg",
+        "rating": 5,
+        "price":"29,874"
+    },
+    {
+        "title":"Fastrack Limitless FS1 Smartwatch",
+        "img":"./fastrack-limitless-f.webp",
+        "rating": 5,
+        "price":"2,495"
+    },
+    {
+        "title":"Primebook 4G Android Laptop",
+        "img":"./primebook-4g-android.jpg",
+        "rating": 4,
+        "price":"16,990"
+    },
+    {
+        "title":"Xiaomi MI Band 8",
+        "img":"./xiaomi-mi-band-8.webp",
+        "rating": 4,
+        "price":"2,849"
+    },
+    {
+        "title":"Apple Reality Pro VR Hadset",
+        "img":"./apple-reality-pro-vr.webp",
+        "rating": 5,
+        "price":"2,45,999"
+    }
+]

@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
+    <title>ASOKA-Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba7f05d63e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -21,19 +23,20 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="Home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="Products.html">Products</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Contact">Contact</a></li>
-                    <li><a href="Account">Account</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="cart-container">
+                        <div class="cartNumber"></div>
+                        <img src="shopping-cart.png" height="30px" width="30px">
+                    </li>
                 </ul>
-                <img src="shopping-cart.png" height="30px" width="30px">
             </nav>
         </div>
         <div class="row">
             <div class="col-1">
                 <h1>The Home for Electronic Products!</h1>
-                <a href="" class="btn">Buy Now</a>
+                <a href="Products.html" class="btn">Buy Now</a>
             </div>
             <div class="col-1">
                 <img src="Electronic-PNG-Image-File.png" alt="Gadgets" height="200px">
@@ -59,6 +62,7 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <p>&#8377;4,299</p>
+                        <button class="addItem">Add to cart</button>
                     </div>
                 </div>
                 <div class="col-3">
@@ -73,6 +77,7 @@
                             <i class="fa-sharp fa-solid fa-star"></i>
                         </div>
                         <p>&#8377;1,27,999</p>
+                        <button class="addItem">Add to cart</button>
                     </div>
                 </div>
                 <div class="col-3">
@@ -87,6 +92,7 @@
                             <i class="fa-sharp fa-solid fa-star"></i>
                         </div>
                         <p>&#8377;799</p>
+                        <button class="addItem">Add to cart</button>
                     </div>
                 </div>
                 <div class="col-3">
@@ -101,6 +107,7 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <p>&#8377;54,999</p>
+                        <button class="addItem">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -119,6 +126,7 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                     <p>&#8377;32,299</p>
+                    <button class="addItem">Add to cart</button>
                 </div>
                 <div class="col-3">
                     <img src="apple.jpg" height="225px" width="225px">
@@ -131,6 +139,7 @@
                         <i class="fa-sharp fa-solid fa-star"></i>
                     </div>
                     <p>&#8377;28,300</p>
+                    <button class="addItem">Add to cart</button>
                 </div>
                 <div class="col-3">
                     <img src="usha.pg.jpg" height="225px" width="225px">
@@ -143,6 +152,7 @@
                         <i class="fa-sharp fa-solid fa-star"></i>
                     </div>
                     <p>&#8377;2,275</p>
+                    <button class="addItem">Add to cart</button>
                 </div>
                 <div class="col-3">
                     <img src="canon.jpg" height="225px" width="225px">
@@ -155,6 +165,7 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                     <p>&#8377;71,999</p>
+                    <button class="addItem">Add to cart</button>
                 </div>
             </div>
             <div class="offer">
@@ -243,6 +254,23 @@
         </div>
         </div>
     </footer>
+
+    <script>
+        let cart = 0; 
+        let cartUI = document.querySelector('.cartNumber');
+        let buttons = document.querySelectorAll('.addItem');
+        console.log(buttons)
+        cartUI.innerHTML = cart;
+    
+        function addItem(){
+            cart = cart+1;
+            cartUI.innerHTML = cart;
+        }
+        buttons.forEach((butt)=>{
+            butt.addEventListener("click", addItem)
+        })
+    </script>
+
 </body>
 
 </html>

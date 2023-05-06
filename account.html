@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASOKA-Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba7f05d63e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div id="navbar">
+            <div id="logo">
+                <img src="electronics-logo-removebg-preview.png" alt="E-Commerce" height="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <img src="shopping-cart.png" height="30px" width="30px">
+            </nav>
+        </div>
+    <br><br>
+    
+    <main>
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Electronic-PNG-Image-File.png" height="200px">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="signup()">Sign Up</span>
+                                <hr id="marker">
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+                            <form id="SignForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="E-Mail">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="f-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download our app for ios and Android</p>
+                    <div class="app-logo">
+                        <img src="asta-removebg-preview.png" height="50px">
+                        <img src="ps.png" height="50px">
+                    </div>
+                </div>
+                <div class="f-col-2">
+                    <img src="electronics-logo-removebg-preview.png" height="180px">
+                    <p>Our purpose is to make electonic products easily accessible and available!</p>
+                </div>
+                <div class="f-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="f-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>You Tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">Copyright &copy; ASOKA Electronics</p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var SignForm = document.getElementById("SignForm");
+        var marker = document.getElementById("marker");
+
+        function signup(){
+            SignForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            marker.style.transform = "translateX(65px)";
+        }
+
+        function login(){
+            SignForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            marker.style.transform = "translateX(-55px)";
+        }
+    </script>
+</body>
+
+</html>
